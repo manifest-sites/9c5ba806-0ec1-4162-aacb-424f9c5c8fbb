@@ -1,0 +1,42 @@
+{
+  "name": "Monkey",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "number",
+      "description": "Unique identifier for the monkey"
+    },
+    "name": {
+      "type": "string",
+      "description": "Name of the monkey"
+    },
+    "species": {
+      "type": "string",
+      "description": "Species of the monkey (e.g., Chimpanzee, Gorilla, Orangutan)"
+    },
+    "age": {
+      "type": "number",
+      "description": "Age of the monkey in years"
+    },
+    "habitat": {
+      "type": "string",
+      "description": "Natural habitat of the monkey"
+    },
+    "diet": {
+      "type": "string",
+      "description": "Primary diet of the monkey"
+    },
+    "funFact": {
+      "type": "string",
+      "description": "An interesting fact about this monkey"
+    },
+    "imageUrl": {
+      "type": "string",
+      "description": "URL to monkey image"
+    }
+  },
+  "required": [
+    "name",
+    "species"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls:*)",
+      "Bash(npm:*)",
+      "Edit",
+      "Read",
+      "Write",
+      "Create",
+      "Update",
+      "Bash(npm:*)",
+      "Bash(npx:*)"
+    ],
+    "deny": []
+  }
+}

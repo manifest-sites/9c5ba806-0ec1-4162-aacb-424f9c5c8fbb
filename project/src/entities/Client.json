@@ -1,0 +1,63 @@
+{
+  "name": "Client",
+  "type": "object",
+  "properties": {
+    "userId": {
+      "type": "number",
+      "description": "Unique identifier for the user who owns the client record"
+    },
+    "id": {
+      "type": "number",
+      "description": "Unique identifier for the client"
+    },
+    "firstName": {
+      "type": "string",
+      "description": "Client's first name"
+    },
+    "lastName": {
+      "type": "string",
+      "description": "Client's last name"
+    },
+    "email": {
+      "type": "string",
+      "description": "Client's email address"
+    },
+    "phone": {
+      "type": "string",
+      "description": "Client's phone number"
+    },
+    "company": {
+      "type": "string",
+      "description": "Client's company name"
+    },
+    "legalMatter": {
+      "type": "string",
+      "description": "Description of the legal matter or case type"
+    },
+    "status": {
+      "type": "string",
+      "description": "Client status: prospect, consultation_scheduled, active, closed"
+    },
+    "priority": {
+      "type": "string",
+      "description": "Priority level: low, medium, high"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Additional notes about the client"
+    },
+    "consultationDate": {
+      "type": "string",
+      "description": "Date and time of consultation"
+    },
+    "potentialValue": {
+      "type": "number",
+      "description": "Estimated potential case value"
+    }
+  },
+  "required": [
+    "firstName",
+    "lastName",
+    "status"
+  ]
+}
