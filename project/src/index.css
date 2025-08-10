@@ -1,1 +1,70 @@
 @import "tailwindcss";
+
+/* Custom responsive improvements */
+@media (max-width: 768px) {
+  .ant-layout-sider {
+    position: fixed !important;
+    height: 100vh;
+    left: 0;
+    top: 64px;
+    z-index: 1000;
+  }
+  
+  .ant-layout-sider.ant-layout-sider-collapsed {
+    left: -200px;
+  }
+  
+  .ant-layout-content {
+    margin-left: 0 !important;
+    padding: 16px !important;
+  }
+  
+  .ant-table-wrapper {
+    overflow-x: auto;
+  }
+  
+  .ant-card {
+    margin-bottom: 16px;
+  }
+}
+
+/* Improve table responsiveness */
+.ant-table-thead > tr > th {
+  white-space: nowrap;
+}
+
+.ant-table-tbody > tr > td {
+  white-space: nowrap;
+}
+
+/* Better mobile form experience */
+@media (max-width: 576px) {
+  .ant-form-item {
+    margin-bottom: 16px;
+  }
+  
+  .ant-col {
+    margin-bottom: 8px;
+  }
+}
+
+/* Ensure proper spacing */
+.space-y-6 > * + * {
+  margin-top: 1.5rem;
+}
+
+.space-y-4 > * + * {
+  margin-top: 1rem;
+}
+
+.space-y-2 > * + * {
+  margin-top: 0.5rem;
+}
+
+.space-x-4 > * + * {
+  margin-left: 1rem;
+}
+
+.space-x-2 > * + * {
+  margin-left: 0.5rem;
+}

@@ -1,0 +1,24 @@
+{
+  "name": "HouseholdMember",
+  "type": "object",
+  "properties": {
+    "organizationId": {
+      "type": "string",
+      "description": "Organization ObjectId"
+    },
+    "householdId": {
+      "type": "string",
+      "description": "Household ObjectId"
+    },
+    "personId": {
+      "type": "string",
+      "description": "Person ObjectId"
+    },
+    "relationship": {
+      "type": "string",
+      "enum": ["head", "spouse", "child", "other"],
+      "description": "Relationship to household"
+    }
+  },
+  "required": ["organizationId", "householdId", "personId", "relationship"]
+}

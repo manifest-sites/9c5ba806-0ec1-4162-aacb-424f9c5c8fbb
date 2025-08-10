@@ -1,0 +1,33 @@
+{
+  "name": "Note",
+  "type": "object",
+  "properties": {
+    "organizationId": {
+      "type": "string",
+      "description": "Organization ObjectId"
+    },
+    "personId": {
+      "type": "string",
+      "description": "Person ObjectId"
+    },
+    "authorUserId": {
+      "type": "string",
+      "description": "Author User ObjectId"
+    },
+    "body": {
+      "type": "string",
+      "description": "Note content"
+    },
+    "visibility": {
+      "type": "string",
+      "enum": ["staff_only", "org"],
+      "description": "Note visibility level"
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Creation timestamp"
+    }
+  },
+  "required": ["organizationId", "personId", "authorUserId", "body", "visibility"]
+}

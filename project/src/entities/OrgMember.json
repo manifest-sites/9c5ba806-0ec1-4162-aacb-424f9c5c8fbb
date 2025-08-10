@@ -1,0 +1,25 @@
+{
+  "name": "OrgMember",
+  "type": "object",
+  "properties": {
+    "organizationId": {
+      "type": "string",
+      "description": "Organization ObjectId"
+    },
+    "userId": {
+      "type": "string",
+      "description": "User ObjectId"
+    },
+    "role": {
+      "type": "string",
+      "enum": ["owner", "admin", "member", "viewer"],
+      "description": "User role in organization"
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Creation timestamp"
+    }
+  },
+  "required": ["organizationId", "userId", "role"]
+}

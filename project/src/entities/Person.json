@@ -1,0 +1,59 @@
+{
+  "name": "Person",
+  "type": "object",
+  "properties": {
+    "organizationId": {
+      "type": "string",
+      "description": "Organization ObjectId"
+    },
+    "firstName": {
+      "type": "string",
+      "description": "First name"
+    },
+    "lastName": {
+      "type": "string",
+      "description": "Last name"
+    },
+    "preferredName": {
+      "type": "string",
+      "description": "Preferred name"
+    },
+    "email": {
+      "type": "string",
+      "description": "Email address"
+    },
+    "phone": {
+      "type": "string",
+      "description": "Phone number"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["active", "inactive", "visitor"],
+      "description": "Person status"
+    },
+    "fields": {
+      "type": "object",
+      "description": "Dynamic fields with values"
+    },
+    "householdId": {
+      "type": "string",
+      "description": "Household ObjectId"
+    },
+    "tagIds": {
+      "type": "array",
+      "items": {"type": "string"},
+      "description": "Array of tag ObjectIds"
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Creation timestamp"
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Last update timestamp"
+    }
+  },
+  "required": ["organizationId", "firstName", "lastName", "status"]
+}

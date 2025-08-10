@@ -1,0 +1,24 @@
+{
+  "name": "Tag",
+  "type": "object",
+  "properties": {
+    "organizationId": {
+      "type": "string",
+      "description": "Organization ObjectId"
+    },
+    "name": {
+      "type": "string",
+      "description": "Tag name, unique per org"
+    },
+    "color": {
+      "type": "string",
+      "description": "Tag color hex code"
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Creation timestamp"
+    }
+  },
+  "required": ["organizationId", "name"]
+}

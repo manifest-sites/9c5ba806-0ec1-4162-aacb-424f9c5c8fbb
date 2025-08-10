@@ -1,0 +1,29 @@
+{
+  "name": "User",
+  "type": "object",
+  "properties": {
+    "email": {
+      "type": "string",
+      "description": "User email address"
+    },
+    "name": {
+      "type": "string",
+      "description": "User display name"
+    },
+    "imageUrl": {
+      "type": "string",
+      "description": "User avatar image URL"
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Creation timestamp"
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time", 
+      "description": "Last update timestamp"
+    }
+  },
+  "required": ["email"]
+}
